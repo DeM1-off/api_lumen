@@ -16,3 +16,16 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+
+$router->group(['prefix' => 'api/user'], function () use ($router) {
+    $router->post('register', 'Api\AuthController@register');
+    $router->post('sign-in', 'Api\AuthController@login');
+    $router->post('recover-password', 'Api\PasswordController@generateResetToken');
+    $router->post('reset', 'Api\PasswordController@resetPassword');
+
+    $router->group(['middleware' => 'auth'], function ($router) {
+        $router->post('companies', 'Api\CompanyController@createCompany');
+        $router->get('companies', 'Api\CompanyController@getUserCompany');
+    });
+});
