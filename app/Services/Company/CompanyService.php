@@ -18,7 +18,7 @@ class CompanyService implements CompanyServiceInterface
             'message' => 'successfully added company',
             'data' => Company::create(array_merge(
                 $request->all(),
-                ['user_id' => 1]
+                ['user_id' => auth()->user()->id]
             ))
         ], 201);
     }
