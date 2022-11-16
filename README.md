@@ -1,11 +1,12 @@
 # Lumen PHP Framework
 
-* Controller AuthController.php, 
+* <b>Controller AuthController.php, 
 * Model User
 * seed UserSeed, 
 * Factory UserFactory
 * Servece UserService,serServiceInterface
-* Request LoginRequest,RegisterRequest
+* Request LoginRequest,RegisterRequest</b>
+<br>
 - post-> login
 -  https://domain.com/api/user/sign-in
 
