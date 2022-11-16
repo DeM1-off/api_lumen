@@ -6,27 +6,29 @@
 * Factory UserFactory
 * Servece UserService,serServiceInterface
 * Request LoginRequest,RegisterRequest</b>
-<br>
+<hr>
 - post-> login
 -  https://domain.com/api/user/sign-in
 
 
-* Controller PasswordController, 
+* <b>Controller PasswordController, 
 * Model User,
 * Service ResetPasswordInterface,ResetPasswordService
-* Request EmailRequest,ResetPasswordRequest
+* Request EmailRequest,ResetPasswordRequest </b>
+<hr>
 - post-> Send new password in email
 - https://domain.com/api/user/recover-password
 - post-> Reset new password
 - https://domain.com/api/user/reset
 
-* Controller CompanyController.php, 
+* <b>Controller CompanyController.php, 
 * Model Company
 * seed CompanySeed, 
 * Factory CompanyFactory,CompanyResource,
 * Request CompanyRequest,
 * Repositories CompanyRepositories.php,CompanyRepositoriesInterface.php,
-* Services CompanyService.php,CompanyServiceInterface.php
+* Services CompanyService.php,CompanyServiceInterface.php</b>
+ <hr>
 - get->  company user
 - https://domain.com/api/user/companies
 - post-> creaty new company for user
