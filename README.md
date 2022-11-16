@@ -9,8 +9,8 @@
 
 - post-> login
 -  https://domain.com/api/user/sign-in
-
 <hr>
+
 * <b>Controller PasswordController, 
 * Model User,
 * Service ResetPasswordInterface,ResetPasswordService
@@ -21,6 +21,7 @@
 - post-> Reset new password
 - https://domain.com/api/user/reset
 <hr>
+
 * <b>Controller CompanyController.php, 
 * Model Company
 * seed CompanySeed, 
