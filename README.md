@@ -2,12 +2,12 @@
 
 * <b>Controller AuthController.php, 
 * Model User
-* seed UserSeed, 
+* Seed UserSeed, 
 * Factory UserFactory
 * Servece UserService,serServiceInterface
 * Request LoginRequest,RegisterRequest</b>
 
-- post-> login
+- POST-> login
 -  https://domain.com/api/user/sign-in
 <hr>
 
@@ -16,23 +16,23 @@
 * Service ResetPasswordInterface,ResetPasswordService
 * Request EmailRequest,ResetPasswordRequest </b>
 
-- post-> Send new password in email
+- POST-> Send new password in email
 - https://domain.com/api/user/recover-password
-- post-> Reset new password
+- POST-> Reset new password
 - https://domain.com/api/user/reset
 <hr>
 
 * <b>Controller CompanyController.php, 
 * Model Company
-* seed CompanySeed, 
+* Seed CompanySeed, 
 * Factory CompanyFactory,CompanyResource,
 * Request CompanyRequest,
 * Repositories CompanyRepositories.php,CompanyRepositoriesInterface.php,
 * Services CompanyService.php,CompanyServiceInterface.php</b>
 
-- get->  company user
+- GET->  company user
 - https://domain.com/api/user/companies
-- post-> creaty new company for user
+- POST-> creaty new company for user
 - https://domain.com/api/user/companies
  <hr>
 
