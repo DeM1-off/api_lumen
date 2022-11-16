@@ -1,19 +1,31 @@
 # Lumen PHP Framework
 
-controller AuthController.php, Model User
-seed UserSeed, Factory UserFactory
+* Controller AuthController.php, 
+* Model User
+* seed UserSeed, 
+* Factory UserFactory
+* Servece UserService,serServiceInterface
+* Request LoginRequest,RegisterRequest
 - post-> login
 -  https://domain.com/api/user/sign-in
 
 
-controller PasswordController, Model User
+* Controller PasswordController, 
+* Model User,
+* Service ResetPasswordInterface,ResetPasswordService
+* Request EmailRequest,ResetPasswordRequest
 - post-> Send new password in email
 - https://domain.com/api/user/recover-password
 - post-> Reset new password
 - https://domain.com/api/user/reset
 
-controller CompanyController.php, Model Company
-seed CompanySeed, Factory CompanyFactory,CompanyResource
+* Controller CompanyController.php, 
+* Model Company
+* seed CompanySeed, 
+* Factory CompanyFactory,CompanyResource,
+* Request CompanyRequest,
+* Repositories CompanyRepositories.php,CompanyRepositoriesInterface.php,
+* Services CompanyService.php,CompanyServiceInterface.php
 - get->  company user
 - https://domain.com/api/user/companies
 - post-> creaty new company for user
